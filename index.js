@@ -14,6 +14,7 @@ const theatreRouter = require('./routers/theatreRouter')
 const castRouter   =  require('./routers/castRouter')
 const screenRouter = require('./routers/screenRouter')
 const showRouter = require('./routers/showRouter')
+const bookingRouter = require('./routers/bookingRouter')
 
 
 const app = express()
@@ -30,6 +31,9 @@ app.use('/casts',castRouter)
 app.use('/theatres',theatreRouter)
 app.use('/screens',screenRouter)
 app.use('/shows',showRouter)
+app.use ('/bookings',bookingRouter)
+
+
 
 
   

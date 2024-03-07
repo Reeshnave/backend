@@ -15,16 +15,7 @@ const screenSchema = new mongoose.Schema(
             rows:[
                 {
                     name:String,
-                    seats:[
-                        {
-                        seatnumber:Number,
-                        status:{
-                            type:String,
-                            enum:['available','booked'],
-                            default:'available'
-                        }
-                    }
-                    ]
+                   numberOfSeats:Number
                 }
             ]
 
